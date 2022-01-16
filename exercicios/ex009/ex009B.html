@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex9</title>
+</head>
+
+<body>
+  <select id="nacionalidade">
+    <option value="Brasil">Brasileiro</option>
+    <option value="Americano">Americano</option>
+    <option value="Alemao">Alemão</option>
+    <option value="Canadense">Canadense</option>
+  </select>
+  <button id="prosseguir">Prosseguir</button>
+
+  <script>
+    window.prosseguir.addEventListener('click', () => {
+      verificarNacionalidade();
+    })
+
+    function verificarNacionalidade() {
+      const pais = window.nacionalidade.value;
+      if (pais === 'Brasil') {
+        alert('Você é Brasileiro!');
+      } else {
+        alert('Você é Estrangeiro!');
+      }
+    }
+  </script>
+</body>
+
+</html>

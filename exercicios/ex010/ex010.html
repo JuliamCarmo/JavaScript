@@ -24,9 +24,8 @@
 
   <script>
     function calcular() {
-      var txtv = window.document.getElementById('txtvel')
-      var res = window.document.querySelector('div#res')
-      var vel = Number(txtv.value)
+      const vel = Number(window.txtvel.value);
+      const res = window.res;
       res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}km/h</strong></p>`
       if (vel > 50) {
         res.innerHTML += '<p>Você ultrapassou o limite de velocidade permitido. <strong>MULTADO!</strong></p>'
