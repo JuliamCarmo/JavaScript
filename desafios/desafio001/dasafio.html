@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relógio</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+
+    #relogio {
+      font-size: 28px;
+      border: solid 1px rgb(51, 51, 238);
+      border-radius: 10px;
+      padding: 2px 50px;
+    }
+
+    #relogio:hover {
+      transition: 0.6s;
+      color: darkblue;
+    }
+  </style>
+</head>
+
+<body onload="relogio()">
+  <h1 id="saudar">Relógio</h1>
+  <label id="relogio" onclick="DiaSemana()"></label>
+
+  <script>
+    var saudar = document.getElementById('saudar')
+    var data = new Date()
+    var hora = data.getHours()
+    var nome = window.prompt('Olá, qual é o seu nome?')
+
+    if (hora < 12) {
+      saudar.innerHTML = `Bom dia <strong>${nome}</strong>!`
+    } else if (hora <= 18) {
+      saudar.innerHTML = `Bom Tarde <strong>${nome}</strong>!`
+    } else {
+      saudar.innerHTML = `Boa Noite<strong>${nome}</strong>!`
+    }
+
+    function DiaSemana() {
+      var relogio = document.getElementById('relogio')
+      var data = new Date()
+      var diaSemana = data.getDay()
+
+      switch (diaSemana) {
+        case 0:
+          relogio.innerHTML = 'Domingo!'
+          break
+        case 1:
+          relogio.innerHTML = 'Segunda-Feira!'
+          break
+        case 2:
+          relogio.innerHTML = 'Terça-Feira!'
+          break
+        case 3:
+          relogio.innerHTML = 'Quarta-Feira!'
+          break
+        case 4:
+          relogio.innerHTML = 'Quinta-Feira!'
+          break
+        case 5:
+          relogio.innerHTML = 'Sexta-Feira!'
+          break
+        case 0:
+          relogio.innerHTML = 'Sábado!'
+          break
+        default:
+          relogio.innerHTML = '[ERRO] Dia inválido!'
+      }
+    }
+    function relogio() {
+      var data = new Date()
+      var horas = data.getHours()
+      var minutos = data.getMinutes()
+      var segundos = data.getSeconds()
+
+      if (horas < 10) {
+        horas = '0' + horas
+      } else if (minutos < 10) {
+        minutos = '0' + minutos
+      } else if (segundos < 10) {
+        segundos = '0' + segundos
+      }
+
+      document.querySelector('#relogio').innerHTML = horas + ':' + minutos + ':' + segundos
+    }
+    window.setInterval('relogio()', 1000)
+  </script>
+</body>
+
+</html>
