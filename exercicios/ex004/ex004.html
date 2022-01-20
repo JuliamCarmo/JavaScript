@@ -8,13 +8,12 @@
   <title>Exercício de JavaScript</title>
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: lightgray;
+      font: normal 15pt Arial;
+      background-color: rgb(71, 166, 197);
     }
 
     h1 {
       text-align: center;
-      color: black;
     }
   </style>
 </head>
@@ -24,6 +23,7 @@
 
   <script>
     var nome = window.prompt('Qual seu nome? ')
+
     document.write(`Olá <strong>${nome}</strong>! seu nome tem ${nome.length} letras. <br>`)
     document.write(`Seu nome em letras maiúsculas é ${nome.toUpperCase()} <br>`)
     document.write(`Seu nome em letras miúsculas é ${nome.toLowerCase()}`)

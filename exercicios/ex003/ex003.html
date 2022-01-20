@@ -29,20 +29,20 @@
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt porro velit sed rem, id impedit aliquid similique unde amet quam saepe maiores quasi obcaecati. Maiores ab distinctio delectus commodi vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, deserunt temporibus. Recusandae, expedita! Illo nobis reprehenderit in necessitatibus tempore delectus eligendi maxime, rem consectetur dolorum dolore possimus beatae doloribus obcaecati!</p>
 
   <script>
-    var n1 = Number.parseFloat(window.prompt('Digite um número: ')) //string
-    var n2 = Number.parseFloat(window.prompt('Digite outro número: ')) //string
+    var n1 = Number(window.prompt('Digite um número: ')) //string
+    var n2 = Number(window.prompt('Digite outro número: ')) //string
     // (number + number) para adção
     // (string + string) para concatenção
     var s = n1 + n2
     window.alert(`A soma entre ${n1} e ${n2} é de ${s}`)
 
     /*
-    "Number.parseFloat" para conversão de números frascionados 
+    "Number.parseFloat" para conversão de números reais
     "Number.parseInt" para conversão de números inteiros
-    Ou apenas "Number" e o navegador que se vire 
+    Ou apenas "Number()" 
 
-    "n.toString()" para conversão de nomes
-    Ou apenas "String(n)" e o navegador que se vire
+    "n.toString()" para converter para string
+    Ou apenas "String(n)" 
     */
   </script>
 </body>

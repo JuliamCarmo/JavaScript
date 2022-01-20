@@ -22,20 +22,16 @@
   <div id="msg">Clique aqui</div>
 
   <script>
-    var p1 = window.document.getElementsByTagName('p')[1]
-    window.document.write('Esta escrito assim: ' + p1.innerHTML)
+    var p1 = document.getElementsByTagName('p')[1]
+    document.write('Esta escrito assim: ' + p1.innerHTML)
 
-    var d = window.document.getElementById('msg')
+    var d = document.getElementById('msg')
     d.style.backgroundColor = 'blue'
     d.innerText = 'Aguardando...'
 
-    /* Também podemos mudar outros elementos do site, como a cor de fundo, ou a cor de um parágrafo. Ex:
-    var corpo = window.document.body
-    corpo.style.background = 'black'
-
-    var p1 = window.document.getElementsByTagName('p')[1]
+    var p1 = window.document.getElementsByTagName('p')[0]
     p1.style.color = 'blue'
-    */
+
   </script>
 </body>
 
