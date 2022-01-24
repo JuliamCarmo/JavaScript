@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-  background-image: linear-gradient(to right, #f85e00, #ffb563, #ffd29d);
+  background-color: white;
   font: normal 15pt Arial;
 }
 header{
@@ -15,6 +15,10 @@ section{
   width: 500px;
   margin: auto;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342);
+}
+div{
+  text-align: center;
+  padding: 8px;
 }
 img {
   border-radius: 50%;
