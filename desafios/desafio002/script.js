@@ -15,7 +15,7 @@ function carregar() {
     document.body.style.backgroundImage = 'linear-gradient(to right, #287851, #9DF9CC, #52F7A7, #447A60, #41C485)'
   } else if (hora >= 12 && hora <= 18) {
     img.src = 'desafio/fototarde.jpg'
-    document.body.style.backgroundImagec = 'linear-gradient(to right, #f85e00, #ffb563, #ffd29d)'
+    document.body.style.backgroundImage = 'linear-gradient(to right, #f85e00, #ffb563, #ffd29d)'
   } else {
     imagem.src = 'desafio/imagemnoite.jpg'
     document.body.style.backgroundImage = 'linear-gradient(to right, #305252, #373e40, black)'
