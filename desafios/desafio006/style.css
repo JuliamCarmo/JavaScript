@@ -1,16 +1,13 @@
 @charset "UTF-8";
 
 body{
-  background-image: linear-gradient(to right, #151D69, #7682EC, #2E41E8, #44486B, #2433B5);
+  background-image: linear-gradient(to right, #560670, #CB55F2, #B70CF0, #5D1675, #9009BD);
   font: normal 15pt Arial;
 }
+
 header{
   color: white;
   text-align: center;
-}
-.titulo{
-  font-weight: bold;
-  padding: 8px;
 }
 
 section{
@@ -23,14 +20,13 @@ section{
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342);
 }
 
-select#seltab{
-  width: 150px;
+.destaque{
+  font-weight: bold;
+  padding: 8px;
 }
 
-.destaque{
-  text-align: center;
-  background-color: rgb(69, 69, 207);
-  font-weight: bold;
+select#flista{
+  width: 150px;
 }
 
 footer{
