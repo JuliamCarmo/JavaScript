@@ -1,3 +1,6 @@
+//Em Js praticamente todo tipo de dados é um objeto.
+//'console.log' é um bom exemplo. O 'console' é um objeto e o '.log' é um método que estamos tentando acessar. 
+
 //Objects
 const nome = 'O Senhor dos Anéis'
 const ano = 1954
@@ -21,5 +24,9 @@ const filme = {
   diretor: 'Peter Jackson'
 }
 
-console.log(nome === nome)
+console.log(livro.ano)
+console.log(nome == nome)
 console.log(filme)
+
+const texto = document.querySelector('p')
+console.log(texto.clientHeight)
