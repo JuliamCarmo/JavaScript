@@ -1,0 +1,7 @@
+.texto{
+  display: none;
+}
+
+.texto.ativar{
+  display: block;
+}
