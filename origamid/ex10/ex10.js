@@ -7,3 +7,4 @@ console.log(videogame.pop()) //remove do final e retorna
 console.log(videogame.push('switch')); //adiciona ao final
 
 console.log(videogame.length)
+
